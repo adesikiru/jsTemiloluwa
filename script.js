@@ -25,6 +25,9 @@ let whatever = (p1, p2) => {
 let p = document.querySelectorAll('p')
 p.forEach(p  => {
     p.style.backgroundColor = 'lime'
-    p.innerHTML = whatever(6, 5)
+    let ademola = `<button>${x}</button>`
+    p.innerHTML =/*  whatever(6, 5) */ ademola
 })
-console.log(demo.innerHTML);
+
+console.log(demos.innerHTML.length);
+
