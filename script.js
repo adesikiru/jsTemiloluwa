@@ -26,8 +26,10 @@ let p = document.querySelectorAll('p')
 p.forEach(p  => {
     p.style.backgroundColor = 'lime'
     let ademola = `<button>${x}</button>`
-    p.innerHTML =/*  whatever(6, 5) */ ademola
+    p.innerHTML =/*  whatever(6, 5) */ `<img src="./me.jpg" alt="">`
 })
 
 console.log(demos.innerHTML.length);
 
+rubbish.addEventListener('click', (event) => {
+    event.target.innerHTML = 'wewewe'})
