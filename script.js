@@ -17,19 +17,41 @@ alert(Name); */
 } 
 const Names = 'Ade' 
 */
-let whatever = (p1, p2) => {
-    Name = p1 * p2
+/* let whatever = (p1, p2) => { */
+/*     Name = p1 * p2
     age = p1 + p2
-    return(Name);
+    return (Name);
 }
+
+ */
+/* console.log(demos.innerHTML.length); */
+
+/* let count = 1
+rubbish.addEventListener('click', (event) => {
+    /* event.target.innerHTML = 'wewewe' */
+/*count++
+}) */
+
+
+
+var fruits, text, fLen, counts;
+
+fruits = ["Apple", "Grape", "watermelon", "Ewedu", "Avocado", "Strawberry", "Orange", "pawpaw"];
+text = `<ul>`
+fLen = fruits.length;
+for (counts = 0; counts < fLen; counts++) {
+    text += `<li>` + fruits[counts] + `</li>`
+}
+text += `</ul>`
 let p = document.querySelectorAll('p')
-p.forEach(p  => {
+p.forEach(p => {
     p.style.backgroundColor = 'lime'
     let ademola = `<button>${x}</button>`
-    p.innerHTML =/*  whatever(6, 5) */ `<img src="./me.jpg" alt="">`
+    p.innerHTML = text
 })
 
-console.log(demos.innerHTML.length);
 
-rubbish.addEventListener('click', (event) => {
-    event.target.innerHTML = 'wewewe'})
+
+
+/*  whatever(6, 5) */ /*`<img src="./me.jpg" alt="">`
+console.log(fLen)*/
