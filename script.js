@@ -34,13 +34,12 @@ rubbish.addEventListener('click', (event) => {
 
 
 
-var fruits, text, fLen, counts;
-
-fruits = ["Apple", "Grape", "watermelon", "Ewedu", "Avocado", "Strawberry", "Orange", "pawpaw"];
+/* var fruits, text, fLen, counts;
+fruits = ["Apple", "Grape", "watermelon", "Mango", "Avocado", "Strawberry", "Orange", "pawpaw"];
 text = `<ul>`
 fLen = fruits.length;
 for (counts = 0; counts < fLen; counts++) {
-    text += `<li>` + fruits[counts] + `</li>`
+    text += `<li><b>` + fruits[counts] + `</b> </li>`
 }
 text += `</ul>`
 let p = document.querySelectorAll('p')
@@ -48,9 +47,26 @@ p.forEach(p => {
     p.style.backgroundColor = 'lime'
     let ademola = `<button>${x}</button>`
     p.innerHTML = text
+}) */
+
+var fruits, text, fLen, counts;
+fruits = ["Apple", "Grape", "watermelon", "Mango", "Avocado", "Strawberry", "Orange", "pawpaw"];
+text = `<ul>`
+fruits.forEach(fruit => {
+    text += `<li><b>` + fruit + `</b> </li>`
 })
-
-
+text += `</ul>`
+let p = document.querySelectorAll('p')
+p.forEach(p => {
+    p.style.backgroundColor = 'lime'
+    let ademola = `<button>${x}</button>`
+    p.innerHTML = text
+})
+/* 
+function myFunction(value){
+    text += `<li><b>` + value + `</b> </li>`
+}
+ */
 
 
 /*  whatever(6, 5) */ /*`<img src="./me.jpg" alt="">`
