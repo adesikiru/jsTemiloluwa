@@ -73,6 +73,8 @@ function myFunction(value){
 /*  whatever(6, 5) */ /*`<img src="./me.jpg" alt="">`
 console.log(fLen)*/
 
+
+// for email and password validation
 window.addEventListener("load", () => load.classList.add("completed"));
 
 const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}/;
@@ -129,4 +131,38 @@ function checkValidation() {
     let homePages = '/indexs/homepage/home.html';
 
     checkValidity() ? window.location.assign(homePages) : " "
+}
+
+//for passwords and confirm passwords validation
+
+let form;
+form = document.querySelector("form");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  checkValidation();
+});
+let checkValidity = () => {
+  let [validpassword, validCpassword] = [false, false];
+  if (password.value == "") {
+    error.style.display = "block";
+  } else if (Cpassword.value == "") {
+    /* let errohtml =  */
+    /* errohtml */
+    /* console.log(error.innerHTML); */
+    error.style.display = "block";
+    error.innerHTML = "Confirm Password can't be empty!";
+  } else if (password.value != Cpassword.value) {
+    error.style.display = "block";
+    error.innerHTML = "Password does not match";
+  } else {
+    error.style.display = "none";
+    validCpassword = true;
+    validpassword = true;
+  }
+
+  return validpassword && validCpassword;
+};
+function checkValidation() {
+  let nextPage = "./index2.html";
+  checkValidity() ? window.location.assign(nextPage) : " ";
 }
