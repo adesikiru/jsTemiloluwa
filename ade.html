@@ -13,12 +13,21 @@
     <h1 id="hayya"></h1>
     <h2 id="ojobe"></h2>
     <script async defer>
-        
         function ojuyobo(ps, ps2, ps3, ps4) {
             let japa = 'UK';
-            console.log(japa)
             return ps * ps2 / ps3 + ps4
         }
+        var person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            eyeColor: "blue",
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        }
+        let personAge = person.fullName()
+        console.log(personAge)
         hayya.innerHTML = ojuyobo(100, 20, 80, 90)
     </script>
     <!--  para.innerHTML = Name(10, 10, 10, 10)
