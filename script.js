@@ -80,7 +80,6 @@ window.addEventListener("load", () => load.classList.add("completed"));
 const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}/;
 myForm.addEventListener('submit', (e) => {
     e.preventDefault();
-
     checkValidation();
 });
 
